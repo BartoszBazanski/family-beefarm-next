@@ -28,16 +28,16 @@ const Navigation = () => {
               className="fixed top-0 bottom-0 right-0 left-0"
             />
           ) : null}
-          <div className="bg-white text-yellow-500 fixed top-0 w-full">
-            <div
-              className={classNames(
-                'mx-auto max-w-7xl px-2 border-y border-yellow-500 shadow-yellow-500 sm:px-6 lg:px-8',
-                {
-                  'shadow-none': open,
-                  'shadow-sm': !open
-                }
-              )}
-            >
+          <div
+            className={classNames(
+              'bg-white text-yellow-500 fixed top-0 w-full border-y border-yellow-500 shadow-yellow-500',
+              {
+                'shadow-none': open,
+                'shadow-sm': !open
+              }
+            )}
+          >
+            <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
               <div className="relative flex h-16 items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button*/}
@@ -97,7 +97,7 @@ const Navigation = () => {
               leaveFrom="transform scale-100 opacity-100"
               leaveTo="transform scale-95 opacity-0"
             >
-              <Disclosure.Panel className="border-b border-yellow-500 shadow-sm shadow-yellow-500 sm:hidden">
+              <Disclosure.Panel className="border-y border-yellow-500 shadow-sm shadow-yellow-500 sm:hidden">
                 <div className="space-y-1 px-2 pb-3 pt-2">
                   {navigation.map((item) => (
                     <Disclosure.Button
