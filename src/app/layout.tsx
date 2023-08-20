@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import Navigation from '@/components/Navigation';
 
 import './globals.css';
+import classNames from 'classnames';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={classNames(inter.className)}>
         <ProgressBar
           height="4px"
           color="#F2994A"
@@ -25,7 +26,9 @@ export default function RootLayout({
           shallowRouting
         />
         <Navigation />
-        {children}
+        <main className="min-h-screen pt-16">
+          <div className="container mx-auto p-5">{children}</div>
+        </main>
         <Footer />
       </body>
     </html>
