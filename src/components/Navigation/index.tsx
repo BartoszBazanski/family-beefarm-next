@@ -62,6 +62,13 @@ const Navigation = () => {
                         height={32}
                       />
                     </Link>
+                    <Image
+                      className="h-8 w-auto"
+                      src="https://unsplash.com/photos/MpL4w1vb798"
+                      alt="Your Company"
+                      width={32}
+                      height={32}
+                    />
                   </div>
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex gap-4">

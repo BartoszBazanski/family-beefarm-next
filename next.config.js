@@ -6,9 +6,15 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'placehold.co',
         port: '',
-        pathname: '/**'
+        pathname: '/*'
+      },
+      {
+        protocol: 'https',
+        hostname: 'unsplash.com',
+        port: '',
+        pathname: '/photos/*'
       }
-    ],
+    ]
   },
   async rewrites() {
     return [
