@@ -56,15 +56,14 @@ const Navigation = () => {
                     <Link href="/">
                       <Image
                         className="h-8 w-auto"
-                        loader={({ src, width, quality }) => {
-                          return `/api/placeholder/${src}?w=${width}&q=${
+                        loader={({ src, width, quality }) =>
+                          `https://placehold.co/${src}?w=${width}&q=${
                             quality || 75
-                          }`;
-                        }}
+                          }`
+                        }
                         src="32x32.png"
                         alt="Your Company"
                         width={32}
-                        height={32}
                       />
                     </Link>
                   </div>
