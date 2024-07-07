@@ -56,19 +56,17 @@ const Navigation = () => {
                     <Link href="/">
                       <Image
                         className="h-8 w-auto"
-                        src="/api/placeholder/32x32.png"
+                        loader={({ src, width, quality }) => {
+                          return `/api/placeholder/${src}?w=${width}&q=${
+                            quality || 75
+                          }`;
+                        }}
+                        src="32x32.png"
                         alt="Your Company"
                         width={32}
                         height={32}
                       />
                     </Link>
-                    <Image
-                      className="h-8 w-auto"
-                      src="https://unsplash.com/photos/MpL4w1vb798"
-                      alt="Your Company"
-                      width={32}
-                      height={32}
-                    />
                   </div>
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex gap-4">
