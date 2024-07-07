@@ -9,7 +9,6 @@ const nextConfig = {
         pathname: '/**'
       }
     ],
-    domains: ['placehold.co']
   },
   webpack(config) {
     const fileLoaderRule = config.module.rules.find((rule) =>
