@@ -4,11 +4,12 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: '**',
+        hostname: 'placehold.co',
         port: '',
         pathname: '**'
       }
-    ]
+    ],
+    domains: ['placehold.co']
   },
   webpack(config) {
     const fileLoaderRule = config.module.rules.find((rule) =>
