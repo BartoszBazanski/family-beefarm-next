@@ -56,7 +56,7 @@ const Navigation = () => {
                     <Link href="/">
                       <Image
                         className="h-8 w-auto"
-                        src="https://placehold.co/32x32.png"
+                        src="/api/placeholder/32x32.png"
                         alt="Your Company"
                         width={32}
                         height={32}
