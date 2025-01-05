@@ -36,9 +36,13 @@ const Navigation = () => {
               <div className="flex h-12 items-center justify-between md:h-16">
                 <div className="flex items-center justify-center sm:flex-1 sm:items-stretch sm:justify-start">
                   <div className="flex flex-shrink-0 items-center">
-                    <Link href="/" className="text-secondary transition-colors hover:text-secondary-500">
+                    <DisclosureButton
+                      as={Link}
+                      href="/"
+                      className="text-secondary transition-colors hover:text-secondary-500"
+                    >
                       <LogoIcon className="w-10" />
-                    </Link>
+                    </DisclosureButton>
                   </div>
                   <div className="hidden flex-1 sm:ml-6 sm:flex sm:items-center">
                     <div className="flex gap-4">
