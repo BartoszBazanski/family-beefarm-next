@@ -11,7 +11,7 @@ import { cn } from '@/lib/cn';
 import { HexButton } from '../Button/HexButton';
 
 const navigation = [
-  { name: 'O Nas', href: '/o-nas' },
+  // { name: 'O Nas', href: '/o-nas' },
   { name: 'Nasze produkty', href: '/miody' },
 ];
 

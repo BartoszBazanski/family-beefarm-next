@@ -9,7 +9,6 @@ const Footer = () => {
     <footer className="bg-primary text-white">
       <div className="container py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          {/* Kontakt */}
           <div>
             <h3 className="mb-4 font-playfair text-xl text-secondary-500">Kontakt</h3>
             <ul className="space-y-3">
@@ -36,10 +35,10 @@ const Footer = () => {
               <li className="flex items-center gap-2">
                 <Mail className="w-5 text-secondary-500" />
                 <a
-                  href="mailto:pasiekawolaszczygielkowa@gmail.com"
+                  href="mailto:kontakt@pasiekaszczygielkowa.pl"
                   className="font-lato transition-colors hover:text-secondary-500"
                 >
-                  szczygielkowapasieka@gmail.com
+                  kontakt@pasiekaszczygielkowa.pl
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -58,14 +57,9 @@ const Footer = () => {
             <h3 className="mb-4 font-playfair text-xl text-secondary-500">Szybkie linki</h3>
             <ul className="space-y-2 font-lato">
               <li>
-                <a href="/o-nas" className="transition-colors hover:text-secondary">
-                  O nas
-                </a>
-              </li>
-              <li>
-                <a href="/miody" className="transition-colors hover:text-secondary">
+                <Link href="/miody" className="transition-colors hover:text-secondary">
                   Nasze produkty
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
