@@ -29,11 +29,11 @@ export const HeroSection = () => {
               <Link href="/miody">
                 <HexButton className="h-18 sm:h-20">Zobacz nasze produkty</HexButton>
               </Link>
-              <Link href="/o-nas">
+              {/* <Link href="/o-nas">
                 <HexButton className="h-18 sm:h-20" variant="secondary">
                   Poznaj naszą historię
                 </HexButton>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
