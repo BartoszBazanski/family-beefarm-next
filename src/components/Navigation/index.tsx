@@ -1,47 +1,75 @@
 'use client';
 
-import { Disclosure, Transition } from '@headlessui/react';
+import { Disclosure, DisclosureButton, DisclosurePanel, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import Image from 'next/image';
-import classNames from 'classnames';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Fragment } from 'react';
+
+import LogoIcon from '@/assets/icons/logo.svg';
+import { cn } from '@/lib/cn';
+
+import { HexButton } from '../Button/HexButton';
 
 const navigation = [
-  { name: 'O Nas', href: '/o-nas' },
-  { name: 'Miody', href: '/miody' },
-  { name: 'Przepisy', href: '/przepisy' },
-  { name: 'Kontakt', href: '/kontakt' }
+  // { name: 'O Nas', href: '/o-nas' },
+  { name: 'Nasze produkty', href: '/miody' },
 ];
 
 const Navigation = () => {
   const pathname = usePathname();
 
   return (
-    <Disclosure as={Fragment}>
+    <Disclosure as="div">
       {({ open }) => (
         <>
-          {open ? (
-            <Disclosure.Button
-              as="div"
-              className="fixed top-0 bottom-0 right-0 left-0"
-            />
-          ) : null}
+          {open ? <DisclosureButton as="div" className="fixed bottom-0 left-0 right-0 top-0 z-20" /> : null}
           <div
-            className={classNames(
-              'bg-white text-yellow-500 fixed top-0 w-full border-y border-yellow-500 shadow-yellow-500',
+            className={cn(
+              'fixed top-0 z-50 w-full border-y border-secondary bg-primary-100 text-primary shadow-secondary',
               {
                 'shadow-none': open,
-                'shadow-sm': !open
-              }
+                'shadow-sm': !open,
+              },
             )}
           >
-            <div className="mx-auto container px-2 sm:px-6 lg:px-8">
-              <div className="relative flex h-16 items-center justify-between">
-                <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <div className="container">
+              <div className="flex h-12 items-center justify-between md:h-16">
+                <div className="flex items-center justify-center sm:flex-1 sm:items-stretch sm:justify-start">
+                  <div className="flex flex-shrink-0 items-center">
+                    <DisclosureButton
+                      as={Link}
+                      href="/"
+                      className="text-secondary transition-colors hover:text-secondary-500"
+                    >
+                      <LogoIcon className="w-10" />
+                    </DisclosureButton>
+                  </div>
+                  <div className="hidden flex-1 sm:ml-6 sm:flex sm:items-center">
+                    <div className="flex gap-4">
+                      {navigation.map((item) => (
+                        <Link
+                          key={item.name}
+                          href={item.href}
+                          className={cn('rounded-md px-3 py-2 text-sm font-medium underline-offset-4', {
+                            underline: item.href === pathname,
+                            'hover:underline': item.href !== pathname,
+                          })}
+                          aria-current={item.href === pathname ? 'page' : undefined}
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="hidden flex-shrink-0 items-center sm:flex">
+                    <Link href="/kontakt">
+                      <HexButton className="uppercase">Kontakt</HexButton>
+                    </Link>
+                  </div>
+                </div>
+                <div className="flex items-center sm:hidden">
                   {/* Mobile menu button*/}
-                  <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500">
+                  <DisclosureButton className="relative inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary">
                     <span className="absolute -inset-0.5" />
                     <span className="sr-only">Open main menu</span>
                     {open ? (
@@ -49,46 +77,7 @@ const Navigation = () => {
                     ) : (
                       <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
                     )}
-                  </Disclosure.Button>
-                </div>
-                <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                  <div className="flex flex-shrink-0 items-center">
-                    <Link href="/">
-                      <Image
-                        className="h-8 w-auto"
-                        loader={({ src, width, quality }) =>
-                          `https://placehold.co/${src}?w=${width}&q=${
-                            quality || 75
-                          }`
-                        }
-                        src="32x32.png"
-                        alt="Your Company"
-                        width={32}
-                      />
-                    </Link>
-                  </div>
-                  <div className="hidden sm:ml-6 sm:block">
-                    <div className="flex gap-4">
-                      {navigation.map((item) => (
-                        <Link
-                          key={item.name}
-                          href={item.href}
-                          className={classNames(
-                            'rounded-md px-3 py-2 text-sm font-medium underline-offset-4',
-                            {
-                              underline: item.href === pathname,
-                              'hover:underline': item.href !== pathname
-                            }
-                          )}
-                          aria-current={
-                            item.href === pathname ? 'page' : undefined
-                          }
-                        >
-                          {item.name}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
+                  </DisclosureButton>
                 </div>
               </div>
             </div>
@@ -101,27 +90,27 @@ const Navigation = () => {
               leaveFrom="transform scale-100 opacity-100"
               leaveTo="transform scale-95 opacity-0"
             >
-              <Disclosure.Panel className="border-y border-yellow-500 shadow-sm shadow-yellow-500 sm:hidden">
-                <div className="space-y-1 px-2 pb-3 pt-2">
+              <DisclosurePanel className="border-y border-yellow-500 shadow-sm shadow-yellow-500 sm:hidden">
+                <div className="container space-y-1 pb-3 pt-2">
                   {navigation.map((item) => (
-                    <Disclosure.Button
+                    <DisclosureButton
                       key={item.name}
                       as={Link}
                       href={item.href}
-                      className={classNames(
-                        'block rounded-md px-3 py-2 text-base font-medium underline-offset-4',
-                        {
-                          underline: item.href === pathname,
-                          'hover:underline': item.href !== pathname
-                        }
-                      )}
+                      className={cn('block py-2 text-base font-medium underline-offset-4', {
+                        underline: item.href === pathname,
+                        'hover:underline': item.href !== pathname,
+                      })}
                       aria-current={item.href === pathname ? 'page' : undefined}
                     >
                       {item.name}
-                    </Disclosure.Button>
+                    </DisclosureButton>
                   ))}
+                  <DisclosureButton as={Link} href="/kontakt">
+                    <HexButton className="uppercase">Kontakt</HexButton>
+                  </DisclosureButton>
                 </div>
-              </Disclosure.Panel>
+              </DisclosurePanel>
             </Transition>
           </div>
         </>
