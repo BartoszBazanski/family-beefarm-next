@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation';
 import LogoIcon from '@/assets/icons/logo.svg';
 import { cn } from '@/lib/cn';
 
-import { HexButton } from '../Button/HexButton';
+import { HexPatternButton } from '../Button/HexPatternButton';
 
 const navigation = [
   // { name: 'O Nas', href: '/o-nas' },
@@ -20,7 +20,7 @@ const Navigation = () => {
 
   return (
     <Disclosure as="div">
-      {({ open }) => (
+      {({ open, close }) => (
         <>
           {open ? <DisclosureButton as="div" className="fixed bottom-0 left-0 right-0 top-0 z-20" /> : null}
           <div
@@ -36,13 +36,13 @@ const Navigation = () => {
               <div className="flex h-12 items-center justify-between md:h-16">
                 <div className="flex items-center justify-center sm:flex-1 sm:items-stretch sm:justify-start">
                   <div className="flex flex-shrink-0 items-center">
-                    <DisclosureButton
-                      as={Link}
+                    <Link
                       href="/"
+                      onClick={() => close()}
                       className="text-secondary transition-colors hover:text-secondary-500"
                     >
                       <LogoIcon className="w-10" />
-                    </DisclosureButton>
+                    </Link>
                   </div>
                   <div className="hidden flex-1 sm:ml-6 sm:flex sm:items-center">
                     <div className="flex gap-4">
@@ -63,7 +63,7 @@ const Navigation = () => {
                   </div>
                   <div className="hidden flex-shrink-0 items-center sm:flex">
                     <Link href="/kontakt">
-                      <HexButton className="uppercase">Kontakt</HexButton>
+                      <HexPatternButton>Kontakt</HexPatternButton>
                     </Link>
                   </div>
                 </div>
@@ -107,7 +107,7 @@ const Navigation = () => {
                     </DisclosureButton>
                   ))}
                   <DisclosureButton as={Link} href="/kontakt">
-                    <HexButton className="uppercase">Kontakt</HexButton>
+                    <HexPatternButton>Kontakt</HexPatternButton>
                   </DisclosureButton>
                 </div>
               </DisclosurePanel>

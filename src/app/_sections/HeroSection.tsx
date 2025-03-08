@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import JumbotronImage from '@/assets/images/jumbotron.webp';
 import { HexButton } from '@/components/Button/HexButton';
+import { HexPatternButton } from '@/components/Button/HexPatternButton';
 
 export const HeroSection = () => {
   return (
@@ -23,17 +24,13 @@ export const HeroSection = () => {
           <div className="max-w-2xl text-primary-100">
             <h1 className="mb-6 font-playfair text-4xl md:text-6xl">Pasieka Szczygiełkowa</h1>
             <p className="mb-8 font-lato text-lg md:text-xl">
-              Tradycyjne pszczelarstwo z pasją przekazywane z pokolenia na pokolenie. Naturalne miody prosto z serca gór Świętokrzyskich.
+              Tradycyjne pszczelarstwo z pasją przekazywane z pokolenia na pokolenie. Naturalne miody prosto z serca gór
+              Świętokrzyskich.
             </p>
             <div className="flex flex-col items-start justify-start gap-4 sm:flex-row">
               <Link href="/miody">
-                <HexButton className="h-18 sm:h-20">Zobacz nasze produkty</HexButton>
+                <HexPatternButton>Zobacz nasze produkty</HexPatternButton>
               </Link>
-              {/* <Link href="/o-nas">
-                <HexButton className="h-18 sm:h-20" variant="secondary">
-                  Poznaj naszą historię
-                </HexButton>
-              </Link> */}
             </div>
           </div>
         </div>
