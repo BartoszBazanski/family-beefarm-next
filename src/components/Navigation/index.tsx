@@ -41,6 +41,7 @@ const Navigation = () => {
                         href="/"
                         onClick={() => close()}
                         className="text-secondary hover:text-secondary-500 transition-colors"
+                        aria-label="Strona główna"
                       >
                         <LogoIcon className="w-10" />
                       </Link>
@@ -64,7 +65,9 @@ const Navigation = () => {
                     </div>
                     <div className="hidden shrink-0 items-center sm:flex">
                       <Link href="/kontakt">
-                        <HexPatternButton size="sm" className="shadow shadow-primary">Kontakt</HexPatternButton>
+                        <HexPatternButton size="sm" className="shadow-primary shadow">
+                          Kontakt
+                        </HexPatternButton>
                       </Link>
                     </div>
                   </div>
