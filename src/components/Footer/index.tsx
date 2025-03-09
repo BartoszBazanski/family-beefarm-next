@@ -1,7 +1,8 @@
-import React from 'react';
 import Link from 'next/link';
 import { MapPin, Phone, Mail } from 'lucide-react';
+
 import InstagramIcon from '@/assets/icons/instagram.svg';
+
 import { CopyRights } from './CopyRights';
 
 const Footer = () => {
@@ -10,7 +11,7 @@ const Footer = () => {
       <div className="container py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           <div>
-            <h3 className="font-playfair text-secondary-500 mb-4 text-xl">Kontakt</h3>
+            <p className="font-playfair text-secondary-500 mb-4 text-xl">Kontakt</p>
             <ul className="space-y-3">
               <li>
                 <a
@@ -61,7 +62,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="font-playfair text-secondary-500 mb-4 text-xl">Szybkie linki</h3>
+            <p className="font-playfair text-secondary-500 mb-4 text-xl">Szybkie linki</p>
             <ul className="font-lato space-y-2">
               <li>
                 <Link href="/miody" className="hover:text-secondary transition-colors">

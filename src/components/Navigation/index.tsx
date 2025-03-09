@@ -41,6 +41,7 @@ const Navigation = () => {
                         href="/"
                         onClick={() => close()}
                         className="text-secondary hover:text-secondary-500 transition-colors"
+                        aria-label="Strona główna"
                       >
                         <LogoIcon className="w-10" />
                       </Link>
