@@ -64,7 +64,7 @@ const Navigation = () => {
                     </div>
                     <div className="hidden shrink-0 items-center sm:flex">
                       <Link href="/kontakt">
-                        <HexPatternButton size="sm">Kontakt</HexPatternButton>
+                        <HexPatternButton size="sm" className="shadow shadow-primary">Kontakt</HexPatternButton>
                       </Link>
                     </div>
                   </div>
