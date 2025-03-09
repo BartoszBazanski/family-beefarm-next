@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import JumbotronImage from '@/assets/images/jumbotron.webp';
+import JumbotronImage from '@/assets/images/jumbotron.jpg';
 import { HexPatternButton } from '@/components/Button/HexPatternButton';
 
 export const HeroSection = () => {
@@ -18,8 +18,9 @@ export const HeroSection = () => {
         />
       </div>
       <div
-        className="bg-honeycomb-transparent col-start-1 row-start-1 bg-[size:auto_2rem] opacity-50"
-      ></div>
+        style={{ '--gradient-color': 'var(--color-primary)', '--gradient-alpha': '40%' }}
+        className="bg-honeycomb-transparent-overlay col-start-1 row-start-1 bg-[size:auto_2rem]"
+      />
       <div className="col-start-1 row-start-1 container pt-12 md:pt-16">
         <div className="relative z-10 flex h-screen max-w-6xl items-center px-4">
           <div className="text-primary-100 max-w-2xl">
@@ -30,7 +31,7 @@ export const HeroSection = () => {
             </p>
             <div className="flex flex-col items-start justify-start gap-4 sm:flex-row">
               <Link href="/miody">
-                <HexPatternButton>Zobacz nasze produkty</HexPatternButton>
+                <HexPatternButton className="shadow-primary shadow">Zobacz nasze produkty</HexPatternButton>
               </Link>
             </div>
           </div>
