@@ -13,8 +13,9 @@ export const HexPatternButton = ({ className, children, size = 'default', ...pro
     <button
       {...props}
       className={cn(
-        'border-secondary-800 hover:border-secondary text-primary-100 relative flex items-center justify-center overflow-hidden rounded-xl border-2 px-4 text-sm font-semibold uppercase',
+        'border-secondary text-primary relative flex items-center justify-center overflow-hidden rounded-xl border-2 px-4 text-sm font-semibold uppercase',
         'bg-honeycomb cursor-pointer',
+        'shadow-primary shadow hover:shadow-xs',
         className,
         {
           'h-10 bg-[size:auto_2rem] bg-[position:center_top_.8rem] before:bg-[size:auto_2rem] before:bg-[position:center_top_.8rem]':

@@ -12,24 +12,31 @@ const Footer = () => {
           <div>
             <h3 className="font-playfair text-secondary-500 mb-4 text-xl">Kontakt</h3>
             <ul className="space-y-3">
-              <li className="flex items-center gap-2">
-                <MapPin className="text-secondary-500 w-5" />
-                <span className="font-lato">
-                  Wola Szczygiełkowa 108
-                  <br />
-                  26-006 Nowa Słupia
-                </span>
+              <li>
+                <a
+                  className="hover:text-secondary-500 flex items-center gap-2 transition-colors"
+                  href="https://maps.app.goo.gl/qe9CB4mBxYjpN3FD6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MapPin className="text-secondary-500 w-5" />
+                  <span className="font-lato">
+                    Wola Szczygiełkowa 108
+                    <br />
+                    26-006 Nowa Słupia
+                  </span>
+                </a>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="text-secondary-500 w-5" />
                 <a href="tel:+48502746023" className="font-lato hover:text-secondary-500 transition-colors">
-                  502 746 023
+                  tel: 502 746 023
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="text-secondary-500 w-5" />
                 <a href="tel:+48506047318" className="font-lato hover:text-secondary-500 transition-colors">
-                  506 047 318
+                  tel: 506 047 318
                 </a>
               </li>
               <li className="flex items-center gap-2">
