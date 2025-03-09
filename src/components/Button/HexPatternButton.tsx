@@ -4,19 +4,24 @@ import { cn } from '@/lib/cn';
 import { ClassNameProp } from 'typings/props';
 
 type HexPatternButtonProps = {
-  variant?: 'primary' | 'secondary';
+  size?: 'default' | 'sm';
 } & ClassNameProp &
   ButtonHTMLAttributes<HTMLButtonElement>;
 
-export const HexPatternButton = ({ className, children, ...props }: HexPatternButtonProps) => {
+export const HexPatternButton = ({ className, children, size = 'default', ...props }: HexPatternButtonProps) => {
   return (
     <button
       {...props}
       className={cn(
-        'relative flex h-10 items-center justify-center overflow-hidden rounded-full border-2 border-secondary-800 hover:border-secondary px-4 text-sm font-semibold uppercase text-primary-100',
-        'bg-honeycomb',
-        'bg-[size:auto_2rem] bg-[position:center_top_.8rem] before:bg-[size:auto_2rem] before:bg-[position:center_top_.8rem]',
+        'border-secondary-800 hover:border-secondary text-primary-100 relative flex items-center justify-center overflow-hidden rounded-xl border-2 px-4 text-sm font-semibold uppercase',
+        'bg-honeycomb cursor-pointer',
         className,
+        {
+          'h-10 bg-[size:auto_2rem] bg-[position:center_top_.8rem] before:bg-[size:auto_2rem] before:bg-[position:center_top_.8rem]':
+            size === 'default',
+          'h-8 bg-[size:auto_1.5rem] bg-[position:center_top_.7rem] before:bg-[size:auto_1.5rem] before:bg-[position:center_top_.7rem]':
+            size === 'sm',
+        },
       )}
     >
       <span className="relative z-10">{children}</span>

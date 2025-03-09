@@ -10,10 +10,10 @@ const Footer = () => {
       <div className="container py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           <div>
-            <h3 className="mb-4 font-playfair text-xl text-secondary-500">Kontakt</h3>
+            <h3 className="font-playfair text-secondary-500 mb-4 text-xl">Kontakt</h3>
             <ul className="space-y-3">
               <li className="flex items-center gap-2">
-                <MapPin className="w-5 text-secondary-500" />
+                <MapPin className="text-secondary-500 w-5" />
                 <span className="font-lato">
                   Wola Szczygiełkowa 108
                   <br />
@@ -21,32 +21,32 @@ const Footer = () => {
                 </span>
               </li>
               <li className="flex items-center gap-2">
-                <Phone className="w-5 text-secondary-500" />
-                <a href="tel:+48502746023" className="font-lato transition-colors hover:text-secondary-500">
+                <Phone className="text-secondary-500 w-5" />
+                <a href="tel:+48502746023" className="font-lato hover:text-secondary-500 transition-colors">
                   502 746 023
                 </a>
               </li>
               <li className="flex items-center gap-2">
-                <Phone className="w-5 text-secondary-500" />
-                <a href="tel:+48506047318" className="font-lato transition-colors hover:text-secondary-500">
+                <Phone className="text-secondary-500 w-5" />
+                <a href="tel:+48506047318" className="font-lato hover:text-secondary-500 transition-colors">
                   506 047 318
                 </a>
               </li>
               <li className="flex items-center gap-2">
-                <Mail className="w-5 text-secondary-500" />
+                <Mail className="text-secondary-500 w-5" />
                 <a
                   href="mailto:kontakt@pasiekaszczygielkowa.pl"
-                  className="font-lato transition-colors hover:text-secondary-500"
+                  className="font-lato hover:text-secondary-500 transition-colors"
                 >
                   kontakt@pasiekaszczygielkowa.pl
                 </a>
               </li>
               <li className="flex items-center gap-2">
-                <InstagramIcon className="w-5 text-secondary-500" />
+                <InstagramIcon className="text-secondary-500 w-5" />
                 <a
                   href="https://www.instagram.com/pasieka_wolaszczygielkowa"
                   target="_blank"
-                  className="transition-colors hover:text-secondary-500"
+                  className="hover:text-secondary-500 transition-colors"
                 >
                   Instagram
                 </a>
@@ -54,10 +54,10 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="mb-4 font-playfair text-xl text-secondary-500">Szybkie linki</h3>
-            <ul className="space-y-2 font-lato">
+            <h3 className="font-playfair text-secondary-500 mb-4 text-xl">Szybkie linki</h3>
+            <ul className="font-lato space-y-2">
               <li>
-                <Link href="/miody" className="transition-colors hover:text-secondary">
+                <Link href="/miody" className="hover:text-secondary transition-colors">
                   Nasze produkty
                 </Link>
               </li>
@@ -66,7 +66,10 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="border-t border-secondary/20">
+      <div
+        style={{ '--gradient-color': 'var(--color-primary)', '--gradient-alpha': '80%' }}
+        className="border-secondary/20 bg-honeycomb-transparent-overlay border-t bg-[size:auto_2rem]"
+      >
         <div className="container py-4">
           <CopyRights />
         </div>

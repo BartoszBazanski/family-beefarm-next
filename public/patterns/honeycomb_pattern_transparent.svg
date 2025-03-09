@@ -1,0 +1,38 @@
+<svg width="161" height="136" viewBox="0 0 161 136" fill="none" xmlns="http://www.w3.org/2000/svg" style="--border-color: #634b33; --bg-color: #d4b08c; --pattern-opacity: 0.2">
+  <g style="opacity: var(--pattern-opacity)">
+    <mask id="mask0_27_189" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="161" height="136">
+      <rect width="161" height="136" fill="#D9D9D9" />
+    </mask>
+    <g mask="url(#mask0_27_189)">
+      <path d="M40 -26L83.3013 -1V49L40 74L-3.30127 49V-1L40 -26Z" fill="var(--border-color)" />
+      <path d="M40.3731 -18L76.7461 3V45L40.3731 66L4.00001 45V3L40.3731 -18Z" fill="var(--bg-color)" />
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M38.016 25.8651L0 3.44546L2.03194 0L40.016 22.4008L78 0L80.0319 3.44546L42.016 25.8651V69.7227H38.016V25.8651Z"
+        fill="var(--border-color)" fill-opacity="0.3" />
+      <path d="M120 -26L163.301 -1V49L120 74L76.6987 49V-1L120 -26Z" fill="var(--border-color)" />
+      <path d="M120.373 -18L156.746 3V45L120.373 66L84 45V3L120.373 -18Z" fill="var(--bg-color)" />
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M118.016 25.8651L80 3.44546L82.0319 0L120.016 22.4008L158 0L160.032 3.44546L122.016 25.8651V69.7227H118.016V25.8651Z"
+        fill="var(--border-color)" fill-opacity="0.3" />
+      <path d="M80 41L123.301 66V116L80 141L36.6987 116V66L80 41Z" fill="var(--border-color)" />
+      <path d="M80.3731 49L116.746 70V112L80.3731 133L44 112V70L80.3731 49Z" fill="var(--bg-color)" />
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M78.016 92.8651L40 70.4455L42.0319 67L80.016 89.4008L118 67L120.032 70.4455L82.016 92.8651V136.723H78.016V92.8651Z"
+        fill="var(--border-color)" fill-opacity="0.3" />
+      <path d="M160 41L203.301 66V116L160 141L116.699 116V66L160 41Z" fill="var(--border-color)" />
+      <path d="M160.373 49L196.746 70V112L160.373 133L124 112V70L160.373 49Z" fill="var(--bg-color)" />
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M158.016 92.8651L120 70.4455L122.032 67L160.016 89.4008L198 67L200.032 70.4455L162.016 92.8651V136.723H158.016V92.8651Z"
+        fill="var(--border-color)" fill-opacity="0.3" />
+      <path d="M120 110L163.301 135V185L120 210L76.6987 185V135L120 110Z" fill="var(--border-color)" />
+      <path d="M120.373 118L156.746 139V181L120.373 202L84 181V139L120.373 118Z" fill="var(--bg-color)" />
+      <path d="M40 110L83.3013 135V185L40 210L-3.30127 185V135L40 110Z" fill="var(--border-color)" />
+      <path d="M40.3731 118L76.7461 139V181L40.3731 202L4.00001 181V139L40.3731 118Z" fill="var(--bg-color)" />
+      <path d="M0 41L43.3013 66V116L0 141L-43.3013 116V66L0 41Z" fill="var(--border-color)" />
+      <path d="M0.373077 49L36.7461 70V112L0.373077 133L-36 112V70L0.373077 49Z" fill="var(--bg-color)" />
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M-1.98403 92.8651L-40 70.4455L-37.9681 67L0.0159683 89.4008L38 67L40.0319 70.4455L2.01597 92.8651V136.723H-1.98403V92.8651Z"
+        fill="var(--border-color)" fill-opacity="0.3" />
+    </g>
+  </g>
+</svg>
