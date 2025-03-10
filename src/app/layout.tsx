@@ -25,6 +25,15 @@ const lato = Lato({
   display: 'swap'
 });
 
+export const metadata: Metadata = {
+  openGraph: {
+    type: 'website',
+    title: 'Pasieka Szczygiełkowa',
+    url: 'https://www.pasiekaszczygielkowa.pl/',
+    siteName: 'Pasieka Szczygiełkowa',
+  },
+};
+
 export default function RootLayout({
   children
 }: {
