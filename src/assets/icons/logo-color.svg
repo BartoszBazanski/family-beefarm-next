@@ -1,5 +1,5 @@
 <svg viewBox="-45 -5 515 510" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="-45" y="-5" width="100%" height="100%" fill="#FDF6E9"/>
+  <!-- <rect x="-45" y="-5" width="100%" height="100%" fill="#FDF6E9"/> -->
   <path fill-rule="evenodd" clip-rule="evenodd"
     d="M212.5 0L425 122.687V368.061L212.5 490.748L212.5 454.711L213 455L394.865 350V140L213 35L31.1346 140V350L31.4463 350.18L0.108435 368.123L0 368.061V122.687L212.5 0Z"
     fill="#D9A404" />

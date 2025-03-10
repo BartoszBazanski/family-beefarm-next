@@ -14,6 +14,7 @@ export const HeroSection = () => {
           className="h-full w-full object-cover"
           placeholder="blur"
           sizes="100vw"
+          priority
         />
       </div>
       <div
