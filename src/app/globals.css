@@ -1,19 +1,25 @@
 @import 'tailwindcss';
 
 @theme static {
-  --font-lato:
-    var(--font-lato), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --font-playfair:
-    var(--font-playfair), ui-serif, Georgia, Cambria, 'Times New Roman', Times,
-    serif;
+  --font-lato: var(--font-lato), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-playfair: var(--font-playfair), ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
 
+  --color-accent-100: #f0f4ef;
+  --color-accent-200: #d9e5d6;
+  --color-accent-300: #bdd2b8;
+  --color-accent-400: #9cb691;
+  --color-accent-500: #7c9b72;
+  --color-accent-600: #637f5a;
+  --color-accent-700: #4c6145;
+  --color-accent-800: #36442f;
+  --color-accent-900: #1f271b;
   --color-accent: #7c9b72;
 
   --color-primary-100: #fdf6e9;
   --color-primary-300: #d4b08c;
   --color-primary-500: #634b33;
-  --color-primary-800: #3A2E1F;
+  --color-primary-800: #3a2e1f;
   --color-primary: #634b33;
 
   --color-secondary-100: #fff7e5;
@@ -62,8 +68,10 @@
 }
 
 @utility bg-honeycomb-transparent-overlay {
-  background-image:
-    linear-gradient(--alpha(var(--gradient-color, var(--color-primary-100)) / var(--gradient-alpha, 70%)), --alpha(var(--gradient-color, var(--color-primary-100)) / var(--gradient-alpha, 70%))),
+  background-image: linear-gradient(
+      --alpha(var(--gradient-color, var(--color-primary-100)) / var(--gradient-alpha, 70%)),
+      --alpha(var(--gradient-color, var(--color-primary-100)) / var(--gradient-alpha, 70%))
+    ),
     url('/patterns/honeycomb_pattern_transparent.svg');
   @apply bg-repeat;
 }
