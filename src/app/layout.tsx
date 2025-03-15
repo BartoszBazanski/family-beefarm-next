@@ -9,6 +9,7 @@ import { Metadata } from 'next';
 
 import './globals.css';
 import { AppProviders } from '@/providers/AppProviders';
+import Script from 'next/script';
 
 const playfairDisplay = Playfair_Display({
   subsets: ['latin', 'latin-ext'],
@@ -23,12 +24,32 @@ const lato = Lato({
   display: 'swap'
 });
 
+const businessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'Pasieka Szczygiełkowa',
+  image: 'https://www.pasiekaszczygielkowa.pl/logo.png',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Wola Szczygiełkowa 108',
+    addressLocality: 'Nowa Słupia',
+    postalCode: '26-006',
+    addressRegion: 'Swietokrzyskie',
+    addressCountry: 'Polska',
+  },
+  telephone: '+48 502 746 023',
+  email: 'kontakt@pasiekaszczygielkowa.pl',
+  url: 'https://www.pasiekaszczygielkowa.pl/',
+};
+
 export const metadata: Metadata = {
+  description: 'Miody z własnej pasieki, produkty pszczele i nie tylko',
   openGraph: {
     type: 'website',
     title: 'Pasieka Szczygiełkowa',
     url: 'https://www.pasiekaszczygielkowa.pl/',
     siteName: 'Pasieka Szczygiełkowa',
+    images: [{ url: 'https://www.pasiekaszczygielkowa.pl/og-image', alt: 'Pasieka Szczygiełkowa' }],
   },
 };
 
@@ -61,6 +82,12 @@ export default function RootLayout({
             priority
           />
         </div>
+        <Script
+          id="schema-business"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
+        />
       </body>
     </html>
   );

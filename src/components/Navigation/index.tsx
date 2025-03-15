@@ -19,7 +19,7 @@ const Navigation = () => {
   const pathname = usePathname();
 
   return (
-    <Disclosure as="div">
+    <Disclosure as="nav">
       {({ open, close }) => (
         <>
           {open ? <DisclosureButton as="div" className="fixed top-0 right-0 bottom-0 left-0 z-20" /> : null}
@@ -32,7 +32,7 @@ const Navigation = () => {
               },
             )}
           >
-            <div className="bg-honeycomb-transparent-overlay bg-[size:auto_2rem]">
+            <div>
               <div className="container">
                 <div className="flex h-12 items-center justify-between md:h-16">
                   <div className="flex items-center justify-center sm:flex-1 sm:items-stretch sm:justify-start">

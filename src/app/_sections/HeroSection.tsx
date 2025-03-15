@@ -26,12 +26,11 @@ export const HeroSection = () => {
           <div className="text-primary-100 max-w-2xl">
             <h1 className="font-playfair text-shadow mb-6 text-4xl font-medium md:text-6xl">Pasieka Szczygiełkowa</h1>
             <p className="font-lato text-shadow mb-8 text-lg md:text-xl">
-              Tradycyjne pszczelarstwo z pasją przekazywane z pokolenia na pokolenie. Naturalne miody prosto z serca gór
-              Świętokrzyskich.
+              Tradycyjne pszczelarstwo z pasją przekazywane z pokolenia na pokolenie. Naturalne miody prosto z serca Gór Świętokrzyskich.
             </p>
             <div className="flex flex-col items-start justify-start gap-4 sm:flex-row">
               <Link href="/miody">
-                <HexPatternButton>Zobacz nasze produkty</HexPatternButton>
+                <HexPatternButton variant='plain'>Zobacz nasze produkty</HexPatternButton>
               </Link>
             </div>
           </div>

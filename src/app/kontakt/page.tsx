@@ -5,7 +5,6 @@ import InstagramIcon from '@/assets/icons/instagram.svg';
 
 export const metadata: Metadata = {
   title: 'Kontakt | Pasieka Szczygiełkowa',
-  description: 'Miody z własnej pasieki, produkty pszczele i nie tylko',
 };
 
 export default function Contact() {
@@ -15,7 +14,7 @@ export default function Contact() {
         <h1 className="font-playfair mb-10 text-3xl md:text-5xl">Kontakt</h1>
         <h2 className="text-secondary text-2xl md:text-3xl">Pasieka Szczygiełkowa</h2>
         <p className="font-playfair mb-10 text-xl">
-          Jesteśmy pasjonatami pszczelarstwa z wieloletnim doświadczeniem. Nasze ule znajdują się w sercu gór Świętokrzyskich, z dala od zanieczyszczeń i przemysłu, co zapewnia najwyższą jakość i czystość naszych produktów.
+          Jesteśmy pasjonatami pszczelarstwa z wieloletnim doświadczeniem. Nasze ule znajdują się w sercu Gór Świętokrzyskich, z dala od zanieczyszczeń i przemysłu, co zapewnia najwyższą jakość i czystość naszych produktów.
         </p>
         <h3 className="text-accent text-xl underline underline-offset-4 md:text-2xl">Dane kontaktowe</h3>
         <h4 className="text-secondary text-lg md:text-xl">Adres:</h4>
@@ -47,7 +46,7 @@ export default function Contact() {
           <Mail className="text-secondary-500 w-5" />
           <a
             href="mailto:kontakt@pasiekaszczygielkowa.pl"
-            className="font-lato hover:text-secondary-500 transition-colors"
+            className="font-lato hover:text-secondary-500 whitespace-nowrap transition-colors"
           >
             kontakt@pasiekaszczygielkowa.pl
           </a>
@@ -71,7 +70,7 @@ export default function Contact() {
             Wyślij email na adres{' '}
             <a
               href="mailto:kontakt@pasiekaszczygielkowa.pl"
-              className="font-lato hover:text-secondary-500 transition-colors"
+              className="font-lato hover:text-secondary-500 whitespace-nowrap transition-colors"
             >
               <Mail className="text-secondary-500 mr-1 inline w-4 align-bottom" />
               kontakt@pasiekaszczygielkowa.pl
