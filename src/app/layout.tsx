@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: 'Pasieka Szczygiełkowa',
     url: 'https://www.pasiekaszczygielkowa.pl/',
     siteName: 'Pasieka Szczygiełkowa',
-    images: [{ url: 'https://www.pasiekaszczygielkowa.pl/og-image', alt: 'Pasieka Szczygiełkowa' }],
+    images: [{ url: 'https://www.pasiekaszczygielkowa.pl/og-image.png', alt: 'Pasieka Szczygiełkowa' }],
   },
 };
 
