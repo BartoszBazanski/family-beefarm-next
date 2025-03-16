@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 export default function GoldenrodHoneyPage() {
   return (
     <section className="text-primary container min-h-screen pt-26 pb-10">
-      ⚠️ To jest zastępczy tekst dla strony "Miód nawłociowy". Zostanie zaimplementowany w przyszłości. ⚠️
+      ⚠️ To jest zastępczy tekst dla strony &quot;Miód nawłociowy&quot;. Zostanie zaimplementowany w przyszłości. ⚠️
     </section>
   );
 }
