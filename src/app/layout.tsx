@@ -60,7 +60,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pl">
-      <body className={cn('bg-primary-100', lato.className, playfairDisplay.variable, lato.variable)}>
+      <body className={cn('bg-primary-100 text-primary', lato.className, playfairDisplay.variable, lato.variable)}>
         <AppProviders>
           <Navigation />
           <main className="min-h-screen">{children}</main>

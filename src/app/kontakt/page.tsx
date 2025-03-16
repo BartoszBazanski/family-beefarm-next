@@ -7,14 +7,16 @@ export const metadata: Metadata = {
   title: 'Kontakt | Pasieka Szczygiełkowa',
 };
 
-export default function Contact() {
+export default function ContactPage() {
   return (
     <section className="text-primary container pt-30 pb-20">
       <article className="max-w-2xl space-y-4">
         <h1 className="font-playfair mb-10 text-3xl md:text-5xl">Kontakt</h1>
         <h2 className="text-secondary text-2xl md:text-3xl">Pasieka Szczygiełkowa</h2>
         <p className="font-playfair mb-10 text-xl">
-          Jesteśmy pasjonatami pszczelarstwa z wieloletnim doświadczeniem. Nasze ule znajdują się w sercu Gór Świętokrzyskich, z dala od zanieczyszczeń i przemysłu, co zapewnia najwyższą jakość i czystość naszych produktów.
+          Jesteśmy pasjonatami pszczelarstwa z wieloletnim doświadczeniem. Nasze ule znajdują się w sercu Gór
+          Świętokrzyskich, z dala od zanieczyszczeń i przemysłu, co zapewnia najwyższą jakość i czystość naszych
+          produktów.
         </p>
         <h3 className="text-accent text-xl underline underline-offset-4 md:text-2xl">Dane kontaktowe</h3>
         <h4 className="text-secondary text-lg md:text-xl">Adres:</h4>

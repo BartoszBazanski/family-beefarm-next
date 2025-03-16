@@ -5,8 +5,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticRoutes = [
     '',
-    '/miody',
     '/kontakt',
+    '/miody',
+    '/miody/nawlociowy',
+    '/miody/spadziowy',
+    '/miody/wrzosowy',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
