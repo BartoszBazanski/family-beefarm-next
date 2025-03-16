@@ -55,6 +55,11 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
 }
 
 @utility bg-honeycomb {
