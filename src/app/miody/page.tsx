@@ -12,14 +12,12 @@ export const metadata: Metadata = {
 
 export default function HoneysPage() {
   return (
-    <section className="text-primary container min-h-screen pt-26 pb-10">
-      <div className="container">
-        <h2 className="mb-10 text-3xl font-medium md:text-4xl">Nasze miody</h2>
-        <div className="mb-10 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <HoneyCard imageSrc={GoldenrodHoneyJarImage} title="Miód nawłociowy" linkHref="/miody/nawlociowy" />
-          <HoneyCard imageSrc={HeatherHoneyJarImage} title="Miód wrzosowy" linkHref="/miody/wrzosowy" />
-          <HoneyCard imageSrc={HoneydewHoneyJarImage} title="Miód spadziowy" linkHref="/miody/spadziowy" />
-        </div>
+    <section className="text-primary container min-h-screen pt-24 pb-10">
+      <h2 className="mb-10 text-3xl font-medium md:text-4xl">Nasze miody</h2>
+      <div className="mb-10 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+        <HoneyCard imageSrc={GoldenrodHoneyJarImage} title="Miód nawłociowy" linkHref="/miody/nawlociowy" />
+        <HoneyCard imageSrc={HeatherHoneyJarImage} title="Miód wrzosowy" linkHref="/miody/wrzosowy" />
+        <HoneyCard imageSrc={HoneydewHoneyJarImage} title="Miód spadziowy" linkHref="/miody/spadziowy" />
       </div>
     </section>
   );

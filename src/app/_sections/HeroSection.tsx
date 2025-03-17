@@ -15,11 +15,11 @@ export const HeroSection = () => {
           placeholder="blur"
           priority
         />
+        <div
+          style={{ '--gradient-color': 'var(--color-primary)', '--gradient-alpha': '40%' }}
+          className="bg-honeycomb-transparent-overlay absolute inset-0 col-start-1 row-start-1 bg-[size:auto_2rem]"
+        />
       </div>
-      <div
-        style={{ '--gradient-color': 'var(--color-primary)', '--gradient-alpha': '40%' }}
-        className="bg-honeycomb-transparent-overlay absolute inset-0 col-start-1 row-start-1 bg-[size:auto_2rem]"
-      />
       <div className="col-start-1 row-start-1 container flex items-center pt-12 md:pt-16">
         <div className="p4 relative z-10 flex max-w-6xl items-center">
           <div className="text-primary-100 max-w-2xl">
