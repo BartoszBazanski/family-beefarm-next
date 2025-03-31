@@ -32,6 +32,9 @@
   --color-secondary-800: #a67b03;
   --color-secondary-900: #8c6803;
   --color-secondary: #d9a404;
+
+  --spacing-22: 5.5rem;
+  --spacing-25: 6.25rem;
 }
 
 @utility container {
@@ -83,4 +86,15 @@
 
 @utility text-shadow {
   text-shadow: 1px 2px 1px var(--color-primary);
+}
+
+@utility bg-clip-hexagon {
+  clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
 }
