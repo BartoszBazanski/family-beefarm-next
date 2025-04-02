@@ -6,7 +6,7 @@ export const afterChangeHook: CollectionAfterChangeHook = async ({ collection })
       const path = '/';
 
       await fetch(
-        `/api/revalidate?secret=${process.env.REVALIDATION_TOKEN}&path=${path}`,
+        `${process.env.NEXT_PUBLIC_SITE_URL || `https://${process.env.VERCEL_URL}`}/api/revalidate?secret=${process.env.REVALIDATION_TOKEN}&path=${path}`,
       );
 
       console.log(`Revalidated path: ${path}`);
