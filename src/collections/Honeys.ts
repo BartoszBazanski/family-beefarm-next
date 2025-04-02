@@ -1,7 +1,11 @@
+import { afterChangeHook } from '@/hooks/honeys/afterChange';
 import type { CollectionConfig } from 'payload'
 
 export const Honeys: CollectionConfig = {
   slug: 'honeys',
+  hooks: {
+    afterChange: [afterChangeHook],
+  },
   admin: {
     useAsTitle: 'name',
   },
