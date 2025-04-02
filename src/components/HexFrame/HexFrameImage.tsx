@@ -4,7 +4,7 @@ import Image, { StaticImageData } from 'next/image';
 import { ClassNameProp } from 'typings/props';
 
 type HexFrameImageProps = {
-  imageSrc: StaticImageData;
+  imageSrc: StaticImageData | string;
 } & ClassNameProp;
 
 export const HexFrameImage = ({ className, imageSrc }: HexFrameImageProps) => {

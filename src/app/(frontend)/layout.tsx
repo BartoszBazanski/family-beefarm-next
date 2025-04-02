@@ -1,5 +1,6 @@
 import { Lato, Playfair_Display } from 'next/font/google';
 import Image from 'next/image';
+import Script from 'next/script';
 
 import Footer from '@/components/Footer';
 import Navigation from '@/components/Navigation';
@@ -7,9 +8,9 @@ import Navigation from '@/components/Navigation';
 import { cn } from '@/lib/cn';
 import { Metadata } from 'next';
 
-import './globals.css';
+import '../preflight.css';
+import '../globals.css';
 import { AppProviders } from '@/providers/AppProviders';
-import Script from 'next/script';
 
 const playfairDisplay = Playfair_Display({
   subsets: ['latin', 'latin-ext'],

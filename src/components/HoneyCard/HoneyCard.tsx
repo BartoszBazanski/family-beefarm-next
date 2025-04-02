@@ -5,8 +5,8 @@ import { HexPatternButton } from '../Button/HexPatternButton';
 import { HexFrameImage } from '../HexFrame/HexFrameImage';
 
 type HoneyCardProps = {
-  imageSrc: StaticImageData;
-  additionalImageSrc: StaticImageData;
+  imageSrc: StaticImageData | string;
+  additionalImageSrc: StaticImageData | string;
   title: string;
   linkHref: string;
 };
@@ -20,7 +20,7 @@ export const HoneyCard = ({ imageSrc, additionalImageSrc, title, linkHref }: Hon
           className="bg-honeycomb-transparent-overlay border-secondary-500 relative aspect-square border-b bg-[size:auto_2rem]"
           style={{ '--gradient-color': 'var(--color-primary-100)', '--gradient-alpha': '60%' }}
         >
-          <Image src={imageSrc} alt={title} className="group-hover:scale-105 transition-transform object-cover" layout="fill" priority />
+          <Image src={imageSrc} alt={title} className="group-hover:scale-105 transition-transform object-cover size-full" priority width={500} height={500} />
         </div>
         <div className="flex flex-col gap-4 p-4">
           <div className="flex items-center justify-between">
