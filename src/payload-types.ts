@@ -178,11 +178,11 @@ export interface Honey {
   /**
    * Zdjęcie miodu
    */
-  image: number | Media;
+  image?: (number | null) | Media;
   /**
    * Zdjęcie pożytku
    */
-  additional_image: number | Media;
+  additional_image?: (number | null) | Media;
   updatedAt: string;
   createdAt: string;
 }

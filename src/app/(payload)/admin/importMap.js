@@ -22,6 +22,7 @@ import { BoldFeatureClient as BoldFeatureClient_e70f5e05f09f93e00b997edb1ef0c864
 import { ItalicFeatureClient as ItalicFeatureClient_e70f5e05f09f93e00b997edb1ef0c864 } from '@payloadcms/richtext-lexical/client'
 import { Icon as Icon_7713273ba727ca134b49716b27b5174a } from '../../../graphics/Icon.tsx'
 import { Logo as Logo_12230abedf9f016bfbf324f3f3e8c31d } from '../../../graphics/Logo.tsx'
+import { VercelBlobClientUploadHandler as VercelBlobClientUploadHandler_16c82c5e25f430251a3e3ba57219ff4e } from '@payloadcms/storage-vercel-blob/client'
 
 export const importMap = {
   "@payloadcms/richtext-lexical/rsc#RscEntryLexicalCell": RscEntryLexicalCell_44fe37237e0ebf4470c9990d8cb7b07e,
@@ -47,5 +48,6 @@ export const importMap = {
   "@payloadcms/richtext-lexical/client#BoldFeatureClient": BoldFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
   "@payloadcms/richtext-lexical/client#ItalicFeatureClient": ItalicFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
   "/graphics/Icon.tsx#Icon": Icon_7713273ba727ca134b49716b27b5174a,
-  "/graphics/Logo.tsx#Logo": Logo_12230abedf9f016bfbf324f3f3e8c31d
+  "/graphics/Logo.tsx#Logo": Logo_12230abedf9f016bfbf324f3f3e8c31d,
+  "@payloadcms/storage-vercel-blob/client#VercelBlobClientUploadHandler": VercelBlobClientUploadHandler_16c82c5e25f430251a3e3ba57219ff4e
 }

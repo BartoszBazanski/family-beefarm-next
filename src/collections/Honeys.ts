@@ -38,7 +38,6 @@ export const Honeys: CollectionConfig = {
       name: 'image',
       type: 'upload',
       relationTo: 'media',
-      required: true,
       label: 'Zdjęcie',
       admin: {
         description: 'Zdjęcie miodu',
@@ -48,7 +47,6 @@ export const Honeys: CollectionConfig = {
       name: 'additional_image',
       type: 'upload',
       relationTo: 'media',
-      required: true,
       label: 'Dodatkowe zdjęcie',
       admin: {
         description: 'Zdjęcie pożytku',
